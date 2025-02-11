@@ -1,9 +1,45 @@
 body {
-  background-color: aqua;
+  background-color: whitesmoke;
+}
+.container {
+  max-width: 60opx;
+  background: rgb(195, 244, 242);
+  padding: 30px;
+  border-radius: 10px;
+  margin: 30px 0;
+  box-shadow: 1px 3px 3px 3px rgb(233, 239, 239);
+}
+.city {
+  display: flex;
+  justify-content: space-between;
+}
+.date {
+  font-size: 18px;
+  margin: -10px auto;
+}
+.time {
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.time small {
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 36px;
+}
+select {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 5px;
+  border: rgb(21, 226, 233) solid 1px;
+  box-shadow: 1px 2px 5px 3px rgb(95, 128, 117);
+  padding: 7px;
 }
 h1 {
   text-align: center;
 }
 footer {
+  margin-top: 50px auto;
   text-align: center;
 }
