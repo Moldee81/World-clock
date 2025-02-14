@@ -20,7 +20,18 @@ function updateTime() {
       "h:mm:ss[<small>]A[</small>]"
     );
   }
+  let arucasElement = document.querySelector("#arucas");
+  if (arucasElement) {
+    let arucasDateElement = arucasElement.querySelector(".date");
+    let arucasTimeElement = arucasElement.querySelector(".time");
+    let arucasTime = moment().tz("Europe/London");
+    arucasDateElement.innerHTML = arucasTime.format("MMMM Do YYYY");
+    arucasTimeElement.innerHTML = arucasTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
+
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
