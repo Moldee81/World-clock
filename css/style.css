@@ -28,7 +28,6 @@ select {
   border-radius: 10px;
   margin: 60px auto;
   box-shadow: 1px 7px 29px 0px rgb(173, 182, 182);
-  text-align: center;
 }
 .city {
   display: flex;
